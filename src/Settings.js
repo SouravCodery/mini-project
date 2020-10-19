@@ -1,8 +1,9 @@
 import React from 'react';
 
+//The Settings Component has the ability to increase and decrease the size of the iPod
+
 class Settings extends React.Component {
     render() {
-        //this.iPodSize();
         return (
             <div className="Settings">
                 <div> <i className="icon fa fa-fast-backward"></i> Decrease iPod's Size</div>

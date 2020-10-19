@@ -4,35 +4,42 @@ import './Display';
 import Display from './Display';
 import './Wheel';
 import Wheel from './Wheel';
-import './touch';
 import ZingTouch from 'zingtouch';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-        selected: 0,
-        current: 1,
-        prev: 1,
-        CoverFlowCurrent: 0,
-        CoverFlowPrev: 4,
-        MusicPrev: 1,
-        MusicCurrent: 1,
-        MusicSelected: 0,
-        scale: 1
+        selected: 0, //This defines the Component we are currently on among music, games, settings, etc
+        current: 1,  //This defines the Current Option we are currently on in Main Menu
+        prev: 1,     //This defines the Previous Option we were on in Main Menu
+        CoverFlowCurrent: 0, //This defines the Current Picture we are on currently on in Cover FLow
+        CoverFlowPrev: 4,  //This defines the Previous Picture we were on in Cover FLow
+        MusicPrev: 1,   //This defines the Previous Music Option we were on in Music
+        MusicCurrent: 1,  //This defines the Current Music Option we are on currently on in Music
+        MusicSelected: 0, //This defines the Music Option we have selected on in Music
+        scale: 1          //This defines the scale(tranform) of the iPod
     }
   }
- 
+  // Selected State 0 is for <MainMenu/>
+  // Selected State 1 is for <CoverFlow />
+  // Selected State 2 is for <Music/>
+  // Selected State 3 is for <Games />
+  // Selected State 4 is for <Settings />
+
+  //Function to Change the Selected State
   select = (val) => {
       this.setState({
           selected: val
       })
   }
+  //Function to Change the MusicSelected State
   musicSelect = (val) => {
       this.setState({
           MusicSelected: val
       })
   }
+  //Function to traverse through the different components and options. This function set the state as well the css properties.
   currentSet = (val) => {
     if(this.state.selected === 0)
     {
@@ -92,6 +99,7 @@ class App extends React.Component {
     } 
  
   }
+  //This Function when called increases the size of the iPod
   iPodInc = () => {
     if(this.state.selected !== 4)
       return;
@@ -103,6 +111,7 @@ class App extends React.Component {
     })
     iPod.style.transform = 'scale(' + scaleVal + ')';
   }
+  //This Function when called decreases the size of the iPod
   iPodDec = () => {
     if(this.state.selected !== 4)
       return;
@@ -114,6 +123,7 @@ class App extends React.Component {
     })
     iPod.style.transform = 'scale(' + scaleVal + ')';
   }
+  //componentDidMount has been used to put the zing touch's rotate logic into the action
   componentDidMount() {
     const currentSet = this.currentSet;
     var angle = 0;

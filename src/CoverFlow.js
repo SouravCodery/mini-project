@@ -1,5 +1,5 @@
 import React from 'react';
-
+//This has 6 different images to slide through
 const CoverFlow = () => {
     return (
         <div className="CoverFlow">

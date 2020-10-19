@@ -1,5 +1,7 @@
 import React from 'react';
 
+//returns the circular neon div
+
 const Games = () => {
 
     return (

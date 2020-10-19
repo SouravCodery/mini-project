@@ -1,5 +1,7 @@
 import React from 'react';
 
+//The Music Menu returns all the available component's name available for navigation in Music
+
 const MusicMenu = () => {
 
     return (

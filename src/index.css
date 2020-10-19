@@ -1,6 +1,9 @@
+/* We are using the google fonts */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+/* Linear Gradient Background with animation has been used */
+
 body {
-  background: linear-gradient(90deg, #ee7752, #e73c7e, #e8175d, #23a6d5, #23d5ab);
   background: linear-gradient(90deg, #23a6d5, #23d5ab);
   background-size: 300% 100%;
   animation: Colour 10s ease infinite;

@@ -1,6 +1,9 @@
 import React from 'react';
 
+//The Wheel Component handles all the Interativity with the iPod WebApp
+
 class Wheel extends React.Component {
+  //Wheel Set and Wheel Menu calls on the MusicSelect and Select function to change the MusicSelected and Selected States
   WheelSet = () => {
     if(this.props.selected === 2)
     {

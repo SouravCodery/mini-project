@@ -1,5 +1,7 @@
 import React from 'react';
 
+//The Main Menu returns all the available component's name available for navigation
+
 const MainMenu = (props) => {
     return (
         <div className="MainMenu">

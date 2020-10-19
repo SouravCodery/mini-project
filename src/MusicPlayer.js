@@ -1,5 +1,8 @@
 import React from 'react';
+//React Audion Player has been used for Audio Player
 import ReactAudioPlayer from 'react-audio-player';
+
+//Music Player returns the Music Player Component with Song Cover, Title, Artist and Player Options
 
 const MusicPlayer = () => {
     return (
