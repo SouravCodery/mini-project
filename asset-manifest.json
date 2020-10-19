@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mini-project/static/css/main.ff550aca.chunk.css",
+    "main.js": "/mini-project/static/js/main.625ad09d.chunk.js",
+    "main.js.map": "/mini-project/static/js/main.625ad09d.chunk.js.map",
+    "runtime-main.js": "/mini-project/static/js/runtime-main.72767c26.js",
+    "runtime-main.js.map": "/mini-project/static/js/runtime-main.72767c26.js.map",
+    "static/js/2.b1937b53.chunk.js": "/mini-project/static/js/2.b1937b53.chunk.js",
+    "static/js/2.b1937b53.chunk.js.map": "/mini-project/static/js/2.b1937b53.chunk.js.map",
+    "index.html": "/mini-project/index.html",
+    "precache-manifest.5bc882721256b1d6307f1ad645ccf1f4.js": "/mini-project/precache-manifest.5bc882721256b1d6307f1ad645ccf1f4.js",
+    "service-worker.js": "/mini-project/service-worker.js",
+    "static/css/main.ff550aca.chunk.css.map": "/mini-project/static/css/main.ff550aca.chunk.css.map",
+    "static/js/2.b1937b53.chunk.js.LICENSE.txt": "/mini-project/static/js/2.b1937b53.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/mini-project/static/media/sharon-pittaway-iMdsjoiftZo-unsplash.6e21f3aa.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72767c26.js",
+    "static/js/2.b1937b53.chunk.js",
+    "static/css/main.ff550aca.chunk.css",
+    "static/js/main.625ad09d.chunk.js"
+  ]
+}
